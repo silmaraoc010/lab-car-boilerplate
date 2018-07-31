@@ -1,1 +1,258 @@
-/* Los estilos de tu proyecto */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* mapa */
+#map {
+  height: 50vh;
+  width: 80vw;
+  margin: 1rem;
+  color: black;
+}
+
+.container-navbar{
+    height: 15vh;
+    background-color: #ffffff;
+    padding-top: 2em;
+}
+/* Sessão onde fica a imagem do carro */
+.section-taxi figure{
+    background-image: url('../assets/images/taxi.jpg');
+    height: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box-yellow{
+    background-color: #f7b617;
+    color: #ffffff;
+}
+
+/* MODAL REGISTRO */
+.modal-register .register-content,
+.modal-drive .drive-content {
+    background-color:#FFFFF0;
+}
+
+.modal-register  .btn-dark {
+  background-color: #222;
+  color: #fff;
+}
+.modal-login .login-head .bg-user{
+    background-color:#40E0D0
+    ;
+   
+  height: max-content;
+  width: max-content;
+}
+
+
+.modal-login .login-content {
+    background-color:#40E0D0;
+    ;
+   
+} 
+
+.modal-login .login-head .bg-user .bg-icon{
+  color: black;
+}
+
+.login-head .fa-user-circle {
+  font-size:8em;
+  
+}
+
+.modal-body .bg-form-login {
+    background-color:#40E0D0;
+    ;
+  width: 60%;
+}
+.btn-login-color {
+  background-color: #f7b617;
+  border: 1px solid #f7b617;
+  color: #fff;
+}
+
+.desktop{
+    display: none;
+}
+
+.phone{
+    display: inline-block;
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.dropdown-toggle {
+  background-color: rgba(240, 240, 240, 0.8);
+  color: #404040;
+}
+
+/* section phone */
+.line-white{
+    margin: 2em 1em;
+    border: 2px solid #ffffff;
+}
+
+.box-phone{
+    background-color: #f7b617;
+    color: #ffffff;
+}
+
+img[alt="img-phone"]{
+    width: 50vw;
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
+
+/* section driver */
+.section-driver figure{
+    background-image: url('../assets/images/conduce.jpg');
+    height: 70vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-transparence{
+    background-color: rgba(50, 50, 54, 0.3);
+    color: #ffffff;
+    height: 70vh;
+}
+
+.box-transparence .phone, .box-transparence .desktop{
+    position: relative;
+    top: 13em;
+}
+
+.box-transparence button{
+    border: none;
+    background-color: #f7b617;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+footer div i{
+    margin-right: 1em;
+}
+
+footer li, p{
+    font-size: 16px;
+    padding-bottom: 1em;
+    font-weight: 500;
+}
+
+footer figure img{ 
+    margin-bottom: 2em;
+}
+
+
+@media screen and (min-width:991px){
+
+  .desktop{
+        display: block;
+        padding: 4%;
+    }
+
+    .phone{
+        display: none;
+    }
+
+    #map {
+      height: 50vh;
+      width: 35vw;
+      border: 1px solid #ffffff;
+      margin: 1rem;
+    }
+    
+
+    img[alt="logo-blanco"]{
+        width: 6vw;
+    }
+
+
+    .line{
+        width: 75%;
+        margin: 4%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: visible;
+        box-sizing: content-box;
+        background-color: #ffffff;
+    }
+    
+    .line::after{
+        content: "Ou";
+        padding: 0 2em;
+        position: relative;
+        bottom: 0.7em;
+        left: 3.9em;
+        font-size: 18px;
+        color: #ffffff;
+        display: flex;
+        background-color: #f7b617
+    }
+
+    .line-white{
+        margin: 3em em;
+        border: 1px solid #ffffff;
+        
+    }
+
+    img[alt="img-phone"]{
+        width: 20vw;
+        position: relative;
+        right: 30em;
+        margin-left: 10em; 
+    }
+    
+    .text{
+        position: relative;
+        right: -22em;
+        font-size: 22px;
+    }
+
+    .move-left{
+        position: relative;
+        right: -20em;
+        top: 3em;
+    }
+
+    .modal-session form{
+        background-color: #ffffff;
+        width: 20vw;
+        margin-left: 9em;
+    }
+
+    footer div i{
+        position: relative;
+        top: 21.4em;
+    }
+
+    footer figure img{ 
+        position: relative;
+        top: 3em;
+    }
+}
